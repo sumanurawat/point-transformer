@@ -30,7 +30,7 @@ class ModelNet10Cls(data.Dataset):
         self.transforms = transforms
 
         self.set_num_points(num_points)
-        self._cache = os.path.join(DATA_DIR, "modelnet10_normal_resampled_cache")
+        self._cache = os.path.join(DATA_DIR, "modelnet40_normal_resampled_cache")
 
         if not osp.exists(self._cache):
             self.folder = "modelnet10_normal_resampled"
