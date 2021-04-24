@@ -33,7 +33,7 @@ class ModelNet10Cls(data.Dataset):
         self._cache = os.path.join(DATA_DIR, "modelnet40_normal_resampled_cache")
 
         if not osp.exists(self._cache):
-            self.folder = "modelnet10_normal_resampled"
+            self.folder = "modelnet40_normal_resampled"
             self.data_dir = os.path.join(DATA_DIR, self.folder)
             self.url = (
                 "https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip"
